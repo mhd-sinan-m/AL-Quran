@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" id="mode" href="w.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <script src="script.js"></script>
+    <title>Al-Qur'an</title>
+</head>
+<body>
+<img src="icon.png" alt="icon" class="icon">
+<span class="jump add fa-sx"><i title="ctrl+B" onclick="jump();" class="fa-solid fa-list"> </i> &nbsp;&nbsp;<img title="ctrl+M" src="on.png" onclick="dark()" class="bulb" alt="mode"></span>
+<div id="hide" class="add">
+<form action="">
+   <label for="sura">Select sura'</label>
+   <select name="sura" id="sura" class="sura" onchange="surath()">
+    <option value="1"  >Al-Fatiha</option>
+    <option value="2"  >Al-Baqarah</option>
+    <option value="50"  >Al-Imran</option>
+    <option value="77"  >An-Nisa</option>
+    <option value="106"  >Al-Maidah</option>
+    <option value="128"  >Al-An'am</option>
+    <option value="151"  >Al-A'raf</option>
+    <option value="177"  >Al-Anfal </option>
+    <option value="187"  >At-Taubah</option>
+    <option value="208"  >Yunus</option>
+    <option value="221"  >Hud</option>
+    <option value="235"  >Yusuf</option>
+    <option value="249"  >Ar-Ra'd</option>
+    <option value="255"  >Ibrahim</option>
+    <option value="262"  >Al-Hijr</option>
+    <option value="267"  >An-Nahl</option>
+    <option value="282"  >Al-Isra</option>
+    <option value="293"  >Al-Kahf</option>
+    <option value="305"  >Maryam</option>
+    <option value="312"  >Ta-Ha</option>
+    <option value="322"  >Al-Anbiya'</option>
+    <option value="332"  >Al-Haj</option>
+    <option value="342"  >Al-Mu'minun</option>
+    <option value="350"  >An-Nur</option>
+    <option value="359"  >Al-Furqan</option>
+    <option value="367"  >Ash-Shu'ara'</option>
+    <option value="377"  >An-Naml</option>
+    <option value="385"  >Al-Qasas</option>
+    <option value="396"  >Al-Ankabut</option>
+    <option value="404"  >Ar-Rum</option>
+    <option value="411"  >Luqman</option>
+    <option value="415"  >As-Sajdah</option>
+    <option value="418"  >Al-Ahzab</option>
+    <option value="428"  >Saba'</option>
+    <option value="434"  >Al-Fatir</option>
+    <option value="440"  >Ya-Sin</option>
+    <option value="446"  >As-Saffah</option>
+    <option value="453"  >Sad</option>
+    <option value="458"  >Az-Zumar</option>
+    <option value="467"  >Ghafar</option>
+    <option value="477"  >Fusilat</option>
+    <option value=" 483"  >Ash-Shura</option>
+    <option value="489"  >Az-Zukhruf</option>
+    <option value=" 496"  >Ad-Dukhan</option>
+    <option value=" 499"  >Al-Jathiyah</option>
+    <option value="502"  >Al-Ahqaf</option>
+    <option value=" 507"  >Muhammad</option>
+    <option value="511"  >Al-Fat'h</option>
+    <option value="515"  >Al-Hujurat</option>
+    <option value="518"  >Qaf</option>
+    <option value=" 520"  >Adz-Dzariyah</option>
+    <option value="523"  >At-Tur</option>
+    <option value="526"  >An-Najm</option>
+    <option value="528"  >Al-Qamar</option>
+    <option value="531"  >Ar-Rahman</option>
+    <option value="534"  >Al-Waqi'ah</option>
+    <option value="537"  >Al-Hadid</option>
+    <option value="542"  >Al-Mujadilah</option>
+    <option value="545"  >Al-Hashr</option>
+    <option value="549"  >Al-Mumtahanah</option>
+    <option value="551"  >As-Saf</option>
+    <option value="553"  >Al-Jum'ah</option>
+    <option value="554"  >Al-Munafiqun</option>
+    <option value="556"  >At-Taghabun</option>
+    <option value="558"  >At-Talaq</option>
+    <option value="560"  >	At-Tahrim</option>
+    <option value="562"  >Al-Mulk</option>
+    <option value=" 564"  >Al-Qalam</option>
+    <option value="566"  >Al-Haqqah</option>
+    <option value="568"  >Al-Ma'arij</option>
+    <option value="570"  >Nuh</option>
+    <option value=" 572"  >Al-Jinn</option>
+    <option value="574"  >Al-Muzammil</option>
+    <option value="575"  >Al-Mudaththir</option>
+    <option value="577"  >Al-Qiyamah</option>
+    <option value="578"  >Al-Insan</option>
+    <option value=" 580"  >Al-Mursalat</option>
+    <option value="582"  >An-Naba'</option>
+    <option value=" 583"  >An-Nazi'at</option>
+    <option value="585"  >'Abasa</option>
+    <option value=" 586"  >At-Takwir</option>
+    <option value="587"  >Al-Infitar</option>
+    <option value="588"  >Al-Mutaffifin</option>
+    <option value="590"  >Al-Inshiqaq</option>
+    <option value="591"  >Al-Buruj</option>
+    <option value="592"  >At-Tariq</option>
+    <option value=" 593"  >Al-A'la</option>
+    <option value="594"  >Al-Ghashiyah</option>
+    <option value="595"  >Al-Fajr</option>
+    <option value=" 596"  >Al-Balad</option>
+    <option value="597"  >Ash-Shams</option>
+    <option value=" 598"  >Al-Layl</option>
+    <option value="599"  >Adh-Dhuha</option>
+    <option value="600"  >Al-Inshirah</option>
+    <option value="600"  >At-Tin</option>
+    <option value="601"  >Al-'Alaq</option>
+    <option value="598"  >Al-Qadar</option>
+    <option value="598"  >Al-Bayinah</option>
+    <option value="599"  >Az-Zalzalah</option>
+    <option value="599"  >Al-'Adiyah</option>
+    <option value="600"  >Al-Qari'ah</option>
+    <option value=" 600"  >At-Takathur</option>
+    <option value=" 601"  >Al-'Asr</option>
+    <option value=" 601"  >Al-Humazah</option>
+    <option value="601"  >Al-Fil</option>
+    <option value="602"  >Quraish</option>
+    <option value="602"  >Al-Ma'un</option>
+    <option value="602"  >Al-Kawthar</option>
+    <option value=" 603"  >Al-Kafirun</option>
+    <option value="603"  >An-Nasr</option>
+    <option value="603"  >Al-Masad</option>
+    <option value="604"  >Al-Ikhlas</option>
+    <option value="604"  >Al-Falaq</option>
+    <option value="604"  >An-Nas</option>
+   </select>
+   <label>Select Juz'</label>
+   <span class="span"><input type="number" id="juz" name="juz" min="1" max="30">
+   <span onclick="juz()" style="cursor: grab;">go</span></span>
+   <label for="page">Select page</label>
+   <span style="border: 0.2px solid #a0a19d ;text-align: center;  margin-top: 10px;"><input type="text" id="page" name="juz" min="1" max="30">
+    <span onclick="page()" style="cursor: grab;">go</span></span>
+</form>
+</div>
+
+<div class="container add">
+    <img src="https://mp3quran.net/api/quran_pages_svg/002.svg" alt="alquraan" id="img2">
+    <img  src="https://mp3quran.net/api/quran_pages_svg/001.svg" alt="alquraan" id="img1">
+</div>
+<div class="ctrl add">
+    <div title="Arrow Left" onclick="next()"><i class="fa-solid fa-angles-left"></i>NEXT</i></div>
+    <div id="val">001</div>
+    <div title="Arrow Right" onclick="prev()" >PREV<i class="fa-solid fa-angles-right"></i></div>
+</div>
+<i class="fa-solid fa-book"></i>
+<div class="div" style="position: fixed;bottom: 0px; height:9px;width: 100%;"></div>
+<div class="div" style="position: fixed;top: 0px; height: 9px;width: 100%;"></div>
+</body>
+</html>
+<!-- http://mp3quran.net/api/quran_pages_arabic/  https://mp3quran.net/api/quran_pages_svg/dark/001.svg-->

@@ -1,0 +1,18 @@
+
+*{
+    color: #15B392;
+    background: #FCFAEE;
+}
+.add{
+    border: 3px solid #15B392;
+}
+.jump{
+    background:transparent;
+}
+.span{
+    border: 0.2px solid #a0a19d ;
+    text-align: center;
+}
+.div{
+    background: #15B392;
+}
